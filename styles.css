@@ -1,0 +1,144 @@
+/* ESTILOS GERAIS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: #ffff;
+  height: 100vh;
+}
+.flex{
+  display: flex;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.btn-contato button {
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #1079db;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: .2s;
+  
+}
+
+.btn-contato button:hover {
+  box-shadow: 0px 0px 8px #1708e74f;
+  transform: scale(1.2);
+}
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+  padding: 40px 4%;
+}
+.logo img {
+  width: 200px;
+  height: 100px;
+}
+
+header > .interface{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #7a7a7a;
+  text-decoration: none;
+  display: inline-block;
+  transition: .2s;
+}
+header a:hover {
+  color: #0c71e6;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+
+/* ESTILO DO TOP DO SITE */
+
+section.topo-do-site{
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1{
+  color: #0c71e6;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #000307;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: #000408;
+  margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+  position: relative;
+  border-radius: 70%;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100%{
+    top: 30px;
+  }
+}
+
+/* ESTILO ESPECIALIDADES */
+
+section.especialidades{
+  padding: 40px 4%;
+}
+
+section.especialidades .interface h2{
+  color: #00060c;
+  font-size: 34px;
+  text-align: center;
+
+}
+section.especialidades .interface span{
+  color: #0c71e6;
+}
+
+section.especialidades .especialidades-box{
+  color: black;
+  padding: 40px;
+}
+section.especialidades .especialidades-box i {
+  font-size: 70px;
+  color: #0c71e6;
+}
+section.especialidades .especialidades-box h3{
+  font-size: 26px;
+}
