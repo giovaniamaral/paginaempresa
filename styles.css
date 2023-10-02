@@ -103,7 +103,7 @@ section.topo-do-site .flex{
 
 .topo-do-site .img-topo-site img{
   position: relative;
-  border-radius: 70%;
+  border-radius: 30px;
   animation: flutuar 2s ease-in-out infinite alternate;
 }
 @keyframes flutuar {
@@ -119,6 +119,11 @@ section.topo-do-site .flex{
 
 section.especialidades{
   padding: 40px 4%;
+
+}
+section.especialidades .flex{
+  gap: 60px;
+
 }
 
 section.especialidades .interface h2{
@@ -134,11 +139,53 @@ section.especialidades .interface span{
 section.especialidades .especialidades-box{
   color: black;
   padding: 40px;
+  border-radius: 20px;
+  margin-top: 45px;
+  transition: .2s;
+}
+section.especialidades .especialidades-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 18px #0564d15e;
 }
 section.especialidades .especialidades-box i {
   font-size: 70px;
   color: #0c71e6;
 }
 section.especialidades .especialidades-box h3{
-  font-size: 26px;
+  font-size: 28px;
+  margin: 15px 0;
 }
+
+.img-sobre img {
+  width: 300;
+  height: 200px;
+}
+section.sobre {
+  padding: 40px 4%;
+}
+
+section.sobre .flex {
+  align-items: center;
+  gap: 60px;
+}
+
+.sobre .txt-sobre {
+  color: black
+}
+
+.sobre .txt-sobre h2 {
+  font-size: 40px;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span {
+  color: #0c71e6;
+  display: block;
+}
+
+.sobre .txt-sobre p {
+  margin: 20px 0;
+  text-align: justify;
+}
+
