@@ -161,7 +161,7 @@ section.especialidades .especialidades-box h3{
   height: 200px;
 }
 section.sobre {
-  padding: 40px 4%;
+  padding: 80px 4%;
 }
 
 section.sobre .flex {
@@ -188,4 +188,20 @@ section.sobre .flex {
   margin: 20px 0;
   text-align: justify;
 }
+.sobre .txt-sobre .btn-social button{
+ width: 60px;
+ height: 60px;
+ border-radius: 30px;
+ border: none;
+ background-color: #0c71e6;
+ font-size: 25px;
+ cursor:  pointer;
+ transition: .2s;
+ margin: 0 5px;
+}
 
+.btn-social button:hover{
+  box-shadow: 0 0 18px #0564d15e;
+  transform: scale(1.1);
+
+}
