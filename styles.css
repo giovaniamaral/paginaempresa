@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+/* ESTILOS GERAIS */
 body{
   background-color: #f7f6f6;
   height: 100vh;
@@ -32,13 +32,14 @@ body{
 }
 
 .btn-contato button:hover {
-  box-shadow: 0px 0px 8px #1708e74f;
+  box-shadow: 0px 0px 8px var(--hover-color);
   transform: scale(1.2);
 }
 :root {
   --text-color: #000;
   --bg-color: #1079db;
   --text-button-color: #FFFF;
+  --hover-color: #0564d15e;
 }
 h2.titulo {
   color: var(--text-color);
@@ -96,17 +97,17 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site h1{
-  color: #0c71e6;
+  color: var(--text-color);
   font-size: 38px;
   line-height: 40px;
 }
 
 .topo-do-site .txt-topo-site h1 span {
-  color: #151516;
+  color: var(--bg-color);
 }
 
 .topo-do-site .txt-topo-site p {
-  color: #121313;
+  color: var(--text-color);
   margin: 40px 0;
 }
 
@@ -127,8 +128,10 @@ section.topo-do-site .flex{
   }
 }
 
-/* ESTILO ESPECIALIDADES */
 
+
+
+/* ESTILO ESPECIALIDADES */
 section.especialidades{
   padding: 40px 4%;
 
@@ -139,7 +142,7 @@ section.especialidades .flex{
 }
 
 section.especialidades .interface h2{
-  color: #050505;
+  color: var(--text-color);
   font-size: 34px;
   text-align: center;
 
@@ -149,7 +152,7 @@ section.especialidades .interface span{
 }
 
 section.especialidades .especialidades-box{
-  color: rgb(22, 22, 22);
+  color: var(--text-color);
   padding: 40px;
   border-radius: 20px;
   margin-top: 45px;
@@ -168,6 +171,8 @@ section.especialidades .especialidades-box h3{
   margin: 15px 0;
 }
 
+
+/*ESTILOS SOBRE */
 .img-sobre img {
   width: 300;
   height: 200px;
@@ -220,6 +225,11 @@ section.sobre .flex {
   transform: scale(1.1);
 
 }
+
+
+
+
+
 /*FORMULARIO*/
 section.formulario{
   padding: 80px 4%;
@@ -318,8 +328,10 @@ footer .line-footer{
  footer .line-footer p i {
   color: var(--bg-color);
   font-size: 22px;
+  padding: 0 5px;
  }
  footer .line-footer p a {
   color: var(--text-color);
+  text-decoration: none;
   
  }
