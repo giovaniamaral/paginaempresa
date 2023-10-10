@@ -8,13 +8,12 @@
 }
 
 body{
-  background-color: #ffff;
+  background-color: #f7f6f6;
   height: 100vh;
 }
 .flex{
   display: flex;
 }
-
 .interface {
   max-width: 1280px;
   margin: 0 auto;
@@ -24,7 +23,7 @@ body{
   padding: 10px 40px;
   font-size: 18px;
   font-weight: 600;
-  background-color: #1079db;
+  background-color: var(--bg-color);
   border: 0;
   border-radius: 30px;
   cursor: pointer;
@@ -35,6 +34,16 @@ body{
 .btn-contato button:hover {
   box-shadow: 0px 0px 8px #1708e74f;
   transform: scale(1.2);
+}
+:root {
+  --text-color: #000;
+  --bg-color: #1079db;
+  --text-button-color: #FFFF;
+}
+h2.titulo {
+  color: var(--text-color);
+  font-size: 38px;
+  text-align: center;
 }
 
 /* ESTILO DO CABEÇALHO */
@@ -54,7 +63,7 @@ header > .interface{
 }
 
 header a {
-  color: #7a7a7a;
+  color: var(--text-color);
   text-decoration: none;
   display: inline-block;
   transition: .2s;
@@ -93,11 +102,11 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site h1 span {
-  color: #000307;
+  color: #151516;
 }
 
 .topo-do-site .txt-topo-site p {
-  color: #000408;
+  color: #121313;
   margin: 40px 0;
 }
 
@@ -105,6 +114,9 @@ section.topo-do-site .flex{
   position: relative;
   border-radius: 30px;
   animation: flutuar 2s ease-in-out infinite alternate;
+}
+.btn-contato button {
+  color: var(--text-button-color);
 }
 @keyframes flutuar {
   0% {
@@ -127,7 +139,7 @@ section.especialidades .flex{
 }
 
 section.especialidades .interface h2{
-  color: #00060c;
+  color: #050505;
   font-size: 34px;
   text-align: center;
 
@@ -137,7 +149,7 @@ section.especialidades .interface span{
 }
 
 section.especialidades .especialidades-box{
-  color: black;
+  color: rgb(22, 22, 22);
   padding: 40px;
   border-radius: 20px;
   margin-top: 45px;
@@ -170,7 +182,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre {
-  color: black
+  color: var(--text-color);
 }
 
 .sobre .txt-sobre h2 {
@@ -180,7 +192,7 @@ section.sobre .flex {
 }
 
 .sobre .txt-sobre h2 span {
-  color: #0c71e6;
+  color: var(--bg-color);
   display: block;
 }
 
@@ -193,15 +205,77 @@ section.sobre .flex {
  height: 60px;
  border-radius: 30px;
  border: none;
- background-color: #0c71e6;
+ background-color: var(--bg-color);
  font-size: 25px;
  cursor:  pointer;
  transition: .2s;
  margin: 0 5px;
+}
+.btn-social i {
+  color: var(--text-button-color);
 }
 
 .btn-social button:hover{
   box-shadow: 0 0 18px #0564d15e;
   transform: scale(1.1);
 
+}
+/*FORMULARIO*/
+section.formulario{
+  padding: 80px 4%;
+
+}
+.titulo span{
+  color: var(--bg-color);
+
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+form input, form textarea {
+  width: 100%;
+  background-color:  #dadada;
+  border: 0;
+  outline: 0;
+  padding: 20px 15px;
+  border-radius: 15px;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+form input::placeholder{
+  color: #000;
+}
+
+form textarea{
+  resize: none;
+  max-height: 500px;
+}
+
+form .btn-enviar{
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+
+form .btn-enviar input[type=submit]{
+  width: 120px;
+  background-color: var(--bg-color);
+  color: var(--text-button-color);
+  font-weight: 700;
+  cursor: pointer;
+  transition: .2s;
+}
+
+form .btn-enviar input[type=submit]:hover{
+  transform: scale(1.09);
 }
