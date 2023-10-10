@@ -279,3 +279,47 @@ form .btn-enviar input[type=submit]{
 form .btn-enviar input[type=submit]:hover{
   transform: scale(1.09);
 }
+
+/* FOOTER DA PÁGINA  */
+
+.logo-footer img {
+  width: 200px;
+  height: 100px;
+}
+
+footer {
+  padding: 60px 4%;
+  box-shadow: 0 0 40px 10px var(--text-button-color)
+}
+
+footer .flex {
+  justify-content: space-between;
+}
+
+footer .line-footer{
+  padding: 20px 0;
+}
+
+.borda{
+  border-top: 2px solid var(--bg-color);
+}
+.btn-social button{
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--bg-color);
+  font-size: 25px;
+  cursor:  pointer;
+  transition: .2s;
+  margin: 0 5px;
+ }
+
+ footer .line-footer p i {
+  color: var(--bg-color);
+  font-size: 22px;
+ }
+ footer .line-footer p a {
+  color: var(--text-color);
+  
+ }
