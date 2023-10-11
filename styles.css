@@ -40,6 +40,7 @@ body{
   --bg-color: #1079db;
   --text-button-color: #FFFF;
   --hover-color: #0564d15e;
+  --background-header: #dadada
 }
 h2.titulo {
   color: var(--text-color);
@@ -51,6 +52,7 @@ h2.titulo {
 
 header{
   padding: 40px 4%;
+  box-shadow: 0 0 40px 10px var(--background-header)
 }
 .logo img {
   width: 200px;
@@ -70,7 +72,7 @@ header a {
   transition: .2s;
 }
 header a:hover {
-  color: #0c71e6;
+  color: var(--hover-color);
   transform: scale(1.05);
 }
 
@@ -86,34 +88,37 @@ header nav ul li {
 
 /* ESTILO DO TOP DO SITE */
 
-section.topo-do-site{
+section#topo-do-site{
   padding: 40px 4%;
 }
 
-section.topo-do-site .flex{
+
+section#topo-do-site .flex{
   align-items: center;
   justify-content: center;
   gap: 90px;
 }
 
-.topo-do-site h1{
+#topo-do-site h1{
   color: var(--text-color);
   font-size: 38px;
   line-height: 40px;
 }
 
-.topo-do-site .txt-topo-site h1 span {
+#topo-do-site .txt-topo-site h1 span {
   color: var(--bg-color);
 }
 
-.topo-do-site .txt-topo-site p {
+#topo-do-site .txt-topo-site p {
   color: var(--text-color);
   margin: 40px 0;
 }
 
-.topo-do-site .img-topo-site img{
+#topo-do-site .img-topo-site img{
+  width: 600px;
+  height: 500px;
+  border-radius: 30%;
   position: relative;
-  border-radius: 30px;
   animation: flutuar 2s ease-in-out infinite alternate;
 }
 .btn-contato button {
@@ -151,24 +156,28 @@ section.especialidades .interface span{
   color: #0c71e6;
 }
 
-section.especialidades .especialidades-box{
+section.especialidades #especialidades-box{
   color: var(--text-color);
   padding: 40px;
   border-radius: 20px;
   margin-top: 45px;
   transition: .2s;
 }
-section.especialidades .especialidades-box:hover{
+section.especialidades #especialidades-box:hover{
   transform: scale(1.05);
-  box-shadow: 0 0 18px #0564d15e;
+  box-shadow: 0 0 18px var(--hover-color);
 }
-section.especialidades .especialidades-box i {
+section.especialidades #especialidades-box i {
   font-size: 70px;
   color: #0c71e6;
 }
-section.especialidades .especialidades-box h3{
-  font-size: 28px;
+section.especialidades #especialidades-box h3{
+  font-size: 15;
   margin: 15px 0;
+ 
+}
+section.especialidades #especialidades-box h3 p{
+text-align: justify;
 }
 
 
@@ -177,35 +186,35 @@ section.especialidades .especialidades-box h3{
   width: 300;
   height: 200px;
 }
-section.sobre {
+section#sobre {
   padding: 80px 4%;
 }
 
-section.sobre .flex {
+section#sobre .flex {
   align-items: center;
   gap: 60px;
 }
 
-.sobre .txt-sobre {
+#sobre .txt-sobre {
   color: var(--text-color);
 }
 
-.sobre .txt-sobre h2 {
+#sobre .txt-sobre h2 {
   font-size: 40px;
   line-height: 40px;
   margin-bottom: 30px;
 }
 
-.sobre .txt-sobre h2 span {
+#sobre .txt-sobre h2 span {
   color: var(--bg-color);
   display: block;
 }
 
-.sobre .txt-sobre p {
+#sobre .txt-sobre p {
   margin: 20px 0;
   text-align: justify;
 }
-.sobre .txt-sobre .btn-social button{
+#sobre .txt-sobre .btn-social button{
  width: 60px;
  height: 60px;
  border-radius: 30px;
@@ -221,7 +230,7 @@ section.sobre .flex {
 }
 
 .btn-social button:hover{
-  box-shadow: 0 0 18px #0564d15e;
+  box-shadow: 0 0 18px var(--hover-color);
   transform: scale(1.1);
 
 }
@@ -231,7 +240,7 @@ section.sobre .flex {
 
 
 /*FORMULARIO*/
-section.formulario{
+section#formulario{
   padding: 80px 4%;
 
 }
@@ -252,7 +261,7 @@ form {
 
 form input, form textarea {
   width: 100%;
-  background-color:  #dadada;
+  background-color:  var(--background-header);
   border: 0;
   outline: 0;
   padding: 20px 15px;
@@ -262,7 +271,7 @@ form input, form textarea {
 }
 
 form input::placeholder{
-  color: #000;
+  color: var(--text-color);
 }
 
 form textarea{
