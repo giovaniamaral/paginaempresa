@@ -344,3 +344,9 @@ footer .line-footer{
   text-decoration: none;
   
  }
+
+ /*RESPONSIVO CSS */
+
+ @media screen and (max-width: 1050px){
+  
+ }
