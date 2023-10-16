@@ -52,7 +52,8 @@ h2.titulo {
 
 header{
   padding: 40px 4%;
-  box-shadow: 0 0 40px 10px var(--background-header)
+  box-shadow: 0 0 40px 10px var(--background-header);
+  width: 100%;
 }
 .logo img {
   width: 200px;
@@ -91,7 +92,9 @@ header nav ul li {
 section#topo-do-site{
   padding: 40px 4%;
 }
-
+#topo-do-site .flex{
+  flex-direction: column-reverse;
+}
 
 section#topo-do-site .flex{
   align-items: center;
@@ -112,6 +115,7 @@ section#topo-do-site .flex{
 #topo-do-site .txt-topo-site p {
   color: var(--text-color);
   margin: 40px 0;
+  text-align: justify;
 }
 
 #topo-do-site .img-topo-site img{
@@ -347,6 +351,73 @@ footer .line-footer{
 
  /*RESPONSIVO CSS */
 
+ /*Cabeçalho*/
  @media screen and (max-width: 1050px){
-  
+  /*CLASSES GERAIS */
+
+  /* header */
+  .flex{
+    flex-direction: column-reverse;
+  }
+  .menu-desktop, .btn-contato{
+    display: none;
+  }
+  /* topo do site */
+  #topo-do-site .img-topo-site img{
+    width: 350px;
+    height: 350px;
+  }
+  #topo-do-site h1{
+    font-size: 24px;
+  }
+  #topo-do-site p{
+    font-size: 16px;
+  }
+
+  /* Especialidades da empresa */
+section.especialidades .interface h2{
+    font-size: 34px;
+    line-height: 30px;
+  }
+  section.especialidades{
+    padding: 40px 8%;
+  }
+
+  /*Sobre a empresa */
+
+  section.sobre {
+    padding: 80px 8%;
+  }
+  .btn-social {
+    text-align: center;
+    padding: 30px 8%;
+  }
+  #sobre .txt-sobre h2{
+    font-size: 34px;
+    line-height: 30px;
+
+  }
+
+  #sobre .img-sobre{
+    width: 100%
+   
+  }
+
+
+  /*Formulário */
+  section#formulario .interface h2 {
+    font-size: 24px;
+  }
+
+
+  /* Footer */
+  footer .flex {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  footer .line-footer {
+    text-align: center;
+  }
+
  }
