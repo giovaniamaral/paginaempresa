@@ -436,8 +436,8 @@ footer .line-footer{
   }
   /* topo do site */
   #topo-do-site .img-topo-site img{
-    width: 350px;
-    height: 350px;
+    width: 250px;
+    height: 250px;
   }
   #topo-do-site h1{
     font-size: 24px;
@@ -470,9 +470,10 @@ section.especialidades .interface h2{
 
   }
 
-  #sobre .img-sobre{
-    width: 100%
-   
+  #sobre .img-sobre img{
+    width: 250px;
+    height: 200px;
+  
   }
 
 
