@@ -1,6 +1,6 @@
 <h2 align="center">Projeto Desenvolvido com HTML,CSS</h2>
 <div align="center">
-  <img height="1000" src="imagemremend.png"  />
+  <img height="500" width="500" src="imagemremend.png"  />
 </div>
 
 
