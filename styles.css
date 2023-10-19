@@ -161,7 +161,7 @@ section#topo-do-site{
   padding: 40px 4%;
 }
 #topo-do-site .flex{
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
 
 section#topo-do-site .flex{
@@ -471,10 +471,14 @@ section.especialidades .interface h2{
   }
 
   #sobre .img-sobre img{
-    width: 200px;
-    height: 150px
+  display: none;
   
   }
+  #topo-do-site .flex{
+    flex-direction: column-reverse;
+  }
+
+
 
 
   /*Formulário */
