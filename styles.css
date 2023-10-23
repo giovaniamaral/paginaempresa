@@ -445,15 +445,19 @@ footer .line-footer{
   #topo-do-site p{
     font-size: 16px;
   }
-
+  
   /* Especialidades da empresa */
 section.especialidades .interface h2{
     font-size: 34px;
-    line-height: 30px;
+     line-height: 30px;
   }
   section.especialidades{
     padding: 40px 8%;
   }
+  section.especialidades .flex{
+    flex-direction: column;
+  }
+
 
   /*Sobre a empresa */
 
@@ -477,8 +481,6 @@ section.especialidades .interface h2{
   #topo-do-site .flex{
     flex-direction: column-reverse;
   }
-
-
 
 
   /*Formulário */
